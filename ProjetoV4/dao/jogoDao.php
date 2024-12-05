@@ -77,20 +77,20 @@
 
             }
             
-            public static function Update($jogo){
+            public static function Update($jogos){
                  
                 $conexao = Conexao::conectar();
 
                 $query = "UPDATE tb_jogo SET nomeJogo= ?, generoJogo = ?,dataPublicacaoJogo= ?, descJogo = ?, criadorJogo= ?, imagemJogo = ?  WHERE idJogo= ? ";
                 $stmt = $conexao->prepare($query);
 
-                $stmt->bindValue(1, $jogo->getnomeJogo());
-                $stmt->bindValue(2, $jogo->getgeneroJogo());
-                $stmt->bindValue(3, $jogo->getdataPublicacaoJogo());
-                $stmt->bindValue(4, $jogo->getdescJogo());
-                $stmt->bindValue(5, $jogo->getcriadorJogo());
-                $stmt->bindValue(6, $jogo->getImagem());
-                $stmt->bindValue(7, $jogo->getId());
+                $stmt->bindValue(1, $jogos->getnomeJogo());
+                $stmt->bindValue(2, $jogos->getgeneroJogo());
+                $stmt->bindValue(3, $jogos->getdataPublicacaoJogo());
+                $stmt->bindValue(4, $jogos->getdescJogo());
+                $stmt->bindValue(5, $jogos->getcriadorJogo());
+                $stmt->bindValue(6, $jogos->getImagem());
+                $stmt->bindValue(7, $jogos->getId());
 
 
                 $stmt->execute();
