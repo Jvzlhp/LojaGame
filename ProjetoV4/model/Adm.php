@@ -1,4 +1,3 @@
-  <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
   <?php
       class Adm{
           public $id, $cpf, $rg, $nasc, $celular, $nome, $email, $password, $imagem, $token; 
