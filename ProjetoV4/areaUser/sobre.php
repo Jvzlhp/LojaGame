@@ -15,7 +15,7 @@
         <!-- Seção de vídeo -->
         <div class="video-section">
             <video controls>
-                <source src="..." type="video/mp4">
+                <source src="../img/site/Fort.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos.
             </video>
             <div class="description">

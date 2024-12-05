@@ -12,7 +12,7 @@
   
   <footer class="bg-body-color text-white text-center py-4">
     <div class="container">
-      <p class="mb-0">© 2024 Nome da Empresa. Todos os direitos reservados.</p>
+      <p class="mb-0">© 2024 Eclypse. Todos os direitos reservados.</p>
       <div class="social-icons mt-3">
         <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a>
         <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a>

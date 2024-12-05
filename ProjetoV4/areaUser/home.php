@@ -136,7 +136,7 @@ session_start();
 
 
 
-      <!-- <script>
+      <script>
   // Seleciona todas as imagens pequenas
   const smallImages = document.querySelectorAll('.imgs img, .etc img');
   
@@ -166,7 +166,7 @@ session_start();
       }, 2000); // 2000 ms = 2 segundos de delay
     });
   });
-</script> -->
+</script>
 
 
 
@@ -178,6 +178,8 @@ session_start();
         .carousel-indicators {
           margin-bottom: 10px;
         }
+
+
 
         .carou {
           display: flex;
@@ -205,21 +207,14 @@ session_start();
         }
 
         #carouselExampleIndicators2 .carousel-item img.d-block {
-          width: 80%;
-          /* Ajuste conforme necessário */
-          max-height: 380px;
-          /* Ajuste conforme necessário */
-          object-fit: cover;
-          /* Mantém a proporção */
-          margin: 0 auto;
-          box-shadow: 8px 0 5px rgba(0, 0, 0, 0.5);
-          /* Adiciona uma sombra */
-          border-radius: 10px;
-          /* Cantos arredondados para combinar */
-          z-index: 1;
-          /* Garante que a div esteja acima de outras */
+    width: 80%;              /* A largura será 100% do carrossel */
+    height: 380px;            /* Altura fixa para todas as imagens */
+    object-fit: cover;        /* Mantém a imagem proporcional, cobrindo todo o contêiner */
+    box-shadow: 8px 0 5px rgba(0, 0, 0, 0.5);  /* Adiciona sombra à imagem */
+    border-radius: 10px;      /* Bordas arredondadas */
+    z-index: 1;               /* Z-index para a ordem da imagem */
+}
 
-        }
 
         .form {
           background-color: #2A2A3350;
@@ -301,6 +296,13 @@ session_start();
             /* Muda a direção para coluna */
             align-items: center;
             /* Centraliza os itens */
+          }
+          h3.novos{
+            color:white
+          }
+
+          .video-background{
+            display:none;
           }
 
           .filho {
