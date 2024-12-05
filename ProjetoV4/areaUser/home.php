@@ -507,7 +507,6 @@ session_start();
 
         }
 
-        .opaa {}
 
         .dois {
           display: flex;
@@ -967,7 +966,6 @@ session_start();
       <!-- estilo do js -->
 
       <style>
-        .swiper-slide.card {}
 
         .swiper {
           margin-left: auto;
