@@ -57,10 +57,9 @@ case'ATUALIZAR':
     $jogo-> setdescJogo($_POST['descJogo']);
     $jogo->setcriadorJogo($_POST['criadorJogo']);
     $jogo->setImagem ($jogo->salvarImagem($_POST['nomeFoto']));
-    $jogo->setToken($jogo->generateToken());
 
     try{
-        $jogoDao = jogoDao::insert($jogo);
+        $jogoDao = jogoDao::update($jogo);
         header('Location: index.php');
     } catch (Exception $e) {
         //header('Location: register.php');   

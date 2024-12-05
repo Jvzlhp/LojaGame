@@ -3,7 +3,6 @@
 
 require_once '../../dao/jogoDao.php';
 
-
 if(empty($_POST)){
   $acao = "INSERIR";
    $id = "";
@@ -12,6 +11,7 @@ if(empty($_POST)){
    $lanc= "";
    $criador = "";
    $desc = "";
+   $imagem = "";
  }else{
   $acao = "ATUALIZAR";
   $id = $jogoDao['idJogo'];
@@ -22,12 +22,12 @@ if(empty($_POST)){
   $desc = $jogoDao['descJogo'];
   $imagem = $jogoDao['imagemJogo'];
  
-  }
+  } 
 
 
-//   echo "<pre>";
-//  echo print_r($jogoDao);
 //  echo "<pre>";
+//   echo print_r($jogoDao);
+//   echo "<pre>";
 
 ?>
 

@@ -90,7 +90,7 @@
                 $stmt->bindValue(4, $jogo->getdescJogo());
                 $stmt->bindValue(5, $jogo->getcriadorJogo());
                 $stmt->bindValue(6, $jogo->getImagem());
-                $stmt->bindValue(7, $jogo->getId());
+                $stmt->bindValue(7, $jogo->getIdJogo());
 
 
                 $stmt->execute();
